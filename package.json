@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev" : "nodemon backend/server.js",
-    "build" : "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start" : "nodemon backend/server.js"
+    "dev": "nodemon backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "nodemon backend/server.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.11.0",
+    "node-cron": "^3.0.3",
     "twilio": "^5.5.1"
   },
   "devDependencies": {

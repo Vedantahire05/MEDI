@@ -1,13 +1,14 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const teamMembers = [
     {
-      name: "Snigdha Choudhary",
+      name: "Snigdha Choudhari",
       title: "Diploma, CSE",
-      image: "",
+      image: "/images/Snigdha.jpg",
       social: {
         github: "",
         linkedin: "",
@@ -17,7 +18,7 @@ function App() {
     {
       name: "Srushti Arote",
       title: "Diploma, CSE",
-      image: "",
+      image: "/images/Srushti.jpg",
       social: {
         github: "",
         linkedin: "",
@@ -27,7 +28,7 @@ function App() {
     {
       name: "Saloni Garje",
       title: "Diploma, CSE",
-      image: "",
+      image: "/images/Saloni.jpg",
       social: {
         github: "",
         linkedin: "",
@@ -37,7 +38,7 @@ function App() {
     {
       name: "Sejal Hambire",
       title: "Diploma, CSE",
-      image: "",
+      image: "/images/Sejal.jpg",
       social: {
         github: "",
         linkedin: "",
@@ -198,7 +199,7 @@ function App() {
         {/* Services Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Service 1 */}
-          <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+          <Link to={'/chatbot'}><div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
             <div className="shadow-lg p-4 rounded-full mb-4">
               <img
                 src="/images/medicare.png"
@@ -210,10 +211,10 @@ function App() {
             <p className="text-gray-600">
               Empowering Cancer Care with Compassionate Conversations.
             </p>
-          </div>
+          </div></Link>
 
           {/* Service 2 */}
-          <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+          <Link to={'/chatbot'}><div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
             <div className="shadow-lg p-4 rounded-full mb-4">
               <img
                 src="/images/medirare1.png"
@@ -225,10 +226,10 @@ function App() {
             <p className="text-gray-600">
             Specialized Support for Rare Medical Journeys.
             </p>
-          </div>
+          </div></Link>
 
           {/* Service 3 */}
-          <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+          <Link to={'/chatbot'}><div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
             <div className="shadow-lg p-4 rounded-full mb-4">
               <img
                 src="/images/mediayur.png"
@@ -240,24 +241,24 @@ function App() {
             <p className="text-gray-600">
             Holistic Healing Through Ayurvedic Wisdom.
             </p>
-          </div>
+          </div></Link>
 
           {/* Additional Services */}
-          <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+          <Link to={'/meditime'}><div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
             <div className="shadow-lg p-4 rounded-full mb-4">
               <img
-                src="/images/mediaid.png"
+                src="/images/meditime.png"
                 alt="Consultation"
                 className="w-12 h-12"
               />
             </div>
-            <h3 className="text-xl font-bold mb-2">MediAid</h3>
+            <h3 className="text-xl font-bold mb-2">MediTime</h3>
             <p className="text-gray-600">
             Swift Care for Critical Moments.
             </p>
-          </div>
+          </div></Link>
 
-          <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+          <Link to={'/chatbot'}><div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
             <div className="shadow-lg p-4 rounded-full mb-4">
               <img
                 src="/images/medifund.png"
@@ -269,9 +270,9 @@ function App() {
             <p className="text-gray-600">
             Your Trusted Partner in Medical Financing.
             </p>
-          </div>
+          </div></Link>
 
-          <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+          <Link to={'/chatbot'}><div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
             <div className="shadow-lg p-4 rounded-full mb-4">
               <img
                 src="/images/medidiet.png"
@@ -283,7 +284,7 @@ function App() {
             <p className="text-gray-600">
             Personalized Nutrition for a Healthier You
             </p>
-          </div>
+          </div></Link>
         </div>
 
         {/* Learn More Button */}
